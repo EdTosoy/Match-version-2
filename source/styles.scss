@@ -1,0 +1,186 @@
+@import "utilities";
+@import "components";
+
+html {
+  background: $black;
+}
+
+.pop-up {
+  height: 100vh;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .pop-up-wrapper {
+    margin: 0 1rem;
+    max-width: 460px;
+    background-color: $gray;
+    padding: 0.8rem;
+    position: relative;
+    .close {
+      text-align: right;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      button {
+        color: $white;
+        background-color: inherit;
+        font-size: 1.2rem;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $black;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 100;
+      color: $teal;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      color: $white;
+      margin: 2rem 0;
+    }
+  }
+}
+
+header {
+  text-align: center;
+  background-color: $dark-gray;
+  color: $white-text;
+
+  font-family: $primary-font;
+  .hero {
+    width: 100%;
+    height: 100vh;
+    max-height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        li {
+          margin: 0.5rem;
+          font-size: 1.3rem;
+
+          &:first-of-type {
+            padding-right: 1em;
+            border-right: 2px solid $teal;
+          }
+
+          &:hover {
+            color: $teal;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: 600%;
+      font-weight: 50;
+    }
+    h2 {
+      font-size: 130%;
+      color: $teal;
+      font-weight: 300;
+      margin: 1em auto;
+    }
+    p {
+      margin: 0 auto;
+      padding: 0 1rem;
+      max-width: 490px;
+      font-size: 125%;
+    }
+  }
+}
+
+.Typography {
+  .right .top {
+    width: 100%;
+    height: 300px;
+    background-color: $white;
+
+    .sample-text {
+      color: black;
+      text-align: center;
+      padding: 3.2%;
+      font-family: $primary-font;
+      h1 {
+        font-size: 1.7rem;
+      }
+      textarea {
+        background-color: $white;
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 5px;
+        border: none;
+        font-family: $primary-font;
+        &:focus {
+          outline: none;
+        }
+      }
+      .static {
+        display: flex;
+        justify-content: space-between;
+
+        .alphabet {
+          text-align: left;
+        }
+        .styles {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .right .bottom {
+    width: 100%;
+    height: 300px;
+    background: $dark-gray;
+
+    .allignment {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 25%;
+          background-color: black;
+          text-align: center;
+          padding: 2px;
+
+          &:hover {
+            background-color: $gray;
+          }
+        }
+      }
+    }
+    .fonts {
+      margin: 10%;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        font-size: 1.2rem;
+        padding: 3px;
+
+        &:hover {
+          color: $teal;
+        }
+      }
+    }
+  }
+}
