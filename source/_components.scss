@@ -1,0 +1,128 @@
+.Section {
+  .twosides {
+    width: 100%;
+    display: flex;
+    color: $white-text;
+    
+    .left {
+      width: 50%;
+      padding: 1.8rem;
+      display: flex;
+      text-align: center;
+      font-family: $primary-font;
+
+      .principles {
+        margin: 0 auto;
+        h2 {
+          font-size: 4rem;
+          font-weight: 400;
+          color: $teal;
+          margin: 1.1em auto;
+        }
+
+        h3 {
+          font-size: 1.35rem;
+          line-height: 1;
+          font-weight: 100;
+          margin-bottom: 5px;
+          color: $white;
+        }
+
+        p {
+          margin: 2rem auto 0 auto;
+          max-width: 480px;
+          font-size: 1.2rem;
+          color: $gray-text;
+        }
+
+        ul {
+          margin: 2rem auto 0 auto;
+          max-width: 480px;
+
+          li {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+            text-align: left;
+            color: $white-text;
+            font-family: $secondary-font;
+
+            a:hover {
+              color: darken($color: $teal, $amount: 10);
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+    }
+  }
+}
+
+.root-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  margin: 1rem auto 3rem auto;
+  background-color: lighten($color: $teal, $amount: 10);
+  color: $black;
+  padding: 6px 3.5rem;
+  font-size: 120%;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $white-text;
+    background-color: darken($teal, $amount: 10);
+  }
+}
+
+
+header,
+footer,
+section {
+  padding: 1.8rem 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+// BASIC SETUP
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: $primary-font;
+}
+img {
+  width: 100%;
+}
+p {
+  line-height: 1.3;
+}
+a {
+  color: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+input,
+textarea {
+  &:focus {
+    // border: 1px solid $color;
+    outline: none;
+  }
+}
