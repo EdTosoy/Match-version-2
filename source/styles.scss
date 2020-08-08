@@ -451,3 +451,46 @@ header {
     }
   }
 }
+footer {
+  background-color: $dark-gray;
+  color: $gray-text;
+  padding: 1rem;
+
+  .footer-content {
+    width: 100%;
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+      }
+      li {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: $teal;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      padding: 0.5rem;
+
+      span {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+        color: $teal;
+        padding-right: 2px;
+        border-right: 1px solid $teal;
+      }
+    }
+  }
+}
+
+@import "./breakpoints";
